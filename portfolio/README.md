@@ -13,8 +13,8 @@ The work sample is an interactive example built entirely from fictional cookstov
 
 1. Push this repository to GitHub.
 2. In Vercel, choose **Add New → Project** and import the repository.
-3. Set **Root Directory** to `portfolio`.
-4. Choose **Other** as the framework preset. Leave the build command empty; there is no build step.
+3. Keep the repository root as **Root Directory** and choose **Other** as the framework preset.
+4. Leave the build command empty; `vercel.json` sets `portfolio/` as the output directory.
 5. Deploy. Vercel serves `index.html` and the adjacent static assets directly.
 
-For a CLI deployment, run `npx vercel` from this directory and follow the prompts. Use `npx vercel --prod` when you are ready to publish to production.
+For a CLI deployment, run `npx vercel` from the repository root and follow the prompts. Use `npx vercel --prod` when you are ready to publish to production.
