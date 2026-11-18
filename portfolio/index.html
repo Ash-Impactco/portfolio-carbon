@@ -20,7 +20,6 @@
   <a class="brand" href="#top">Aswin Raj Sivaprakash</a>
   <nav aria-label="Main navigation">
     <a href="#bring">What I bring</a>
-    <a href="#sample">Work sample</a>
     <a href="#work">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#video" id="videoNavLink" hidden>Videos</a>
@@ -38,7 +37,6 @@
     <p class="lede">I'm an environmental professional with a background in water quality testing, rural WASH programmes and carbon accounting. ISO 14064 GHG Lead Verifier, MSc University of Twente. Based in Portugal, working remotely.</p>
     <div class="cta">
       <a class="btn primary" href="Aswin_Sivaprakash_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-      <a class="btn" href="#sample">See a work sample</a>
       <a class="btn ghost" href="mailto:ash.impactco@gmail.com">ash.impactco@gmail.com</a>
     </div>
   </div>
@@ -55,42 +53,6 @@
       <article class="bring-card"><span class="number">03</span><h3>Audit-ready evidence</h3><p>Trained as an ISO 14064 GHG Lead Verifier and ISO 14001 Lead Auditor, so I build document sets the way a verifier reads them: traceable, consistent and complete.</p></article>
       <article class="bring-card"><span class="number">04</span><h3>Data and reporting</h3><p>Excel is my main tool, with SQL and Power BI for reporting, Python (pandas) for screening data, and working QGIS. Comfortable with remote teams, SOPs and feedback.</p></article>
     </div>
-  </div>
-</section>
-
-<section class="section alt" id="sample">
-  <div class="wrap">
-    <p class="kicker">Work sample</p>
-    <h2>Checking a monitoring dataset before it goes into a report</h2>
-    <p class="intro">A small, made-up household monitoring survey of the kind a stove project collects. The checks below run in your browser and flag the problems I'd send back to the field team before any of it reached a calculation.</p>
-    <p class="data-disclaimer"><strong>All data on this page is synthetic.</strong></p>
-    <div class="sample-layout">
-      <div>
-        <h3>Checks run</h3>
-        <ol class="checks">
-          <li>Duplicate household IDs</li>
-          <li>One stove ID recorded at two households</li>
-          <li>Visit date before installation date</li>
-          <li>Days used in last 7 outside 0 to 7</li>
-          <li>Stove "not in use" but days used above 0</li>
-          <li>GPS point outside the project area</li>
-          <li>Missing required fields</li>
-          <li>Household size outside 1 to 15</li>
-        </ol>
-      </div>
-      <div class="data-summary" id="summary" aria-label="Dataset summary" aria-live="polite"></div>
-    </div>
-    <div class="table-toolbar">
-      <label><input id="onlyFlagged" type="checkbox"> Show flagged rows only</label>
-    </div>
-    <div class="table-scroll" role="region" aria-label="Synthetic monitoring data table" tabindex="0">
-      <table id="dataTable"></table>
-    </div>
-    <h3 class="issue-heading">Issue log for the field team</h3>
-    <div class="table-scroll" role="region" aria-label="Data quality issue log" tabindex="0">
-      <table id="issueLog"></table>
-    </div>
-    <p class="why">Why this matters: in a stove project, usage rates and household counts feed straight into the emission reduction calculation. A duplicate household or an impossible usage figure inflates credits, and a verifier will find it. Catching it at this stage is cheaper for everyone.</p>
   </div>
 </section>
 
@@ -210,6 +172,5 @@
 <footer class="foot">© 2026 Aswin Raj Sivaprakash · Photos from fieldwork on São Miguel</footer>
 <script>const VIDEOS = [];</script>
 <script src="main.js"></script>
-<script src="data-quality.js"></script>
 </body>
 </html>

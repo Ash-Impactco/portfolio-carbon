@@ -2,8 +2,6 @@
 
 This is a static HTML, CSS and JavaScript site. It has no build step or runtime dependencies.
 
-The work sample is an interactive example built entirely from fictional cookstove records and a fictional project area. It does not report real monitoring or removal results.
-
 ## Setup
 
 - Save the CV as `Aswin_Sivaprakash_CV.pdf` in this directory to enable the Download CV link.
