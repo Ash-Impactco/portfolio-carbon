@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aswin Raj Sivaprakash · Carbon project data, monitoring and verification</title>
+<meta name="description" content="Environmental professional working on carbon project data, monitoring and verification. Field water quality work with UNICEF WASH, carbon accounting on an ERW project in the Azores, ISO 14064 GHG Lead Verifier.">
+<meta property="og:title" content="Aswin Raj Sivaprakash">
+<meta property="og:description" content="Carbon project data, monitoring and verification. Portugal.">
+<meta property="og:image" content="assets/photos/island.jpg">
+<meta name="theme-color" content="#15191a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="#top">Aswin Raj Sivaprakash</a>
+  <nav aria-label="Main navigation">
+    <a href="#bring">What I bring</a>
+    <a href="#sample">Work sample</a>
+    <a href="#work">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#video" id="videoNavLink" hidden>Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-bg" style="background-image:url('assets/photos/island.jpg')"></div>
+  <div class="hero-inner">
+    <img class="avatar" src="assets/photos/aswin.jpg" alt="Aswin Raj Sivaprakash">
+    <p class="eyebrow">Carbon project data · Monitoring · Verification</p>
+    <h1>Field data that holds up at verification.</h1>
+    <p class="lede">I'm an environmental professional with a background in water quality testing, rural WASH programmes and carbon accounting. ISO 14064 GHG Lead Verifier, MSc University of Twente. Based in Portugal, working remotely.</p>
+    <div class="cta">
+      <a class="btn primary" href="Aswin_Sivaprakash_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn" href="#sample">See a work sample</a>
+      <a class="btn ghost" href="mailto:ash.impactco@gmail.com">ash.impactco@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="bring">
+  <div class="wrap">
+    <p class="kicker">What I bring</p>
+    <h2>The groundwork behind a credit issuance</h2>
+    <p class="intro">A credit is only as good as the household data, calculations and evidence behind it. This is the part of the cycle I've worked in.</p>
+    <div class="bring-grid">
+      <article class="bring-card"><span class="number">01</span><h3>Field data and QA</h3><p>Multi-site water quality testing (63 parameters) for UNICEF's WASH programme, and compliance testing of treatment systems at MGK Aqua. I know where field data goes wrong and how to catch it.</p></article>
+      <article class="bring-card"><span class="number">02</span><h3>Methodologies and calculations</h3><p>Built a draft carbon accounting model for an enhanced rock weathering project, with emission deductions and uncertainty. Benchmarked project drafts against Verra VM0046 and Isometric protocols.</p></article>
+      <article class="bring-card"><span class="number">03</span><h3>Audit-ready evidence</h3><p>Trained as an ISO 14064 GHG Lead Verifier and ISO 14001 Lead Auditor, so I build document sets the way a verifier reads them: traceable, consistent and complete.</p></article>
+      <article class="bring-card"><span class="number">04</span><h3>Data and reporting</h3><p>Excel is my main tool, with SQL and Power BI for reporting, Python (pandas) for screening data, and working QGIS. Comfortable with remote teams, SOPs and feedback.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="sample">
+  <div class="wrap">
+    <p class="kicker">Work sample</p>
+    <h2>Checking a monitoring dataset before it goes into a report</h2>
+    <p class="intro">A small, made-up household monitoring survey of the kind a stove project collects. The checks below run in your browser and flag the problems I'd send back to the field team before any of it reached a calculation.</p>
+    <p class="data-disclaimer"><strong>All data on this page is synthetic.</strong></p>
+    <div class="sample-layout">
+      <div>
+        <h3>Checks run</h3>
+        <ol class="checks">
+          <li>Duplicate household IDs</li>
+          <li>One stove ID recorded at two households</li>
+          <li>Visit date before installation date</li>
+          <li>Days used in last 7 outside 0 to 7</li>
+          <li>Stove "not in use" but days used above 0</li>
+          <li>GPS point outside the project area</li>
+          <li>Missing required fields</li>
+          <li>Household size outside 1 to 15</li>
+        </ol>
+      </div>
+      <div class="data-summary" id="summary" aria-label="Dataset summary" aria-live="polite"></div>
+    </div>
+    <div class="table-toolbar">
+      <label><input id="onlyFlagged" type="checkbox"> Show flagged rows only</label>
+    </div>
+    <div class="table-scroll" role="region" aria-label="Synthetic monitoring data table" tabindex="0">
+      <table id="dataTable"></table>
+    </div>
+    <h3 class="issue-heading">Issue log for the field team</h3>
+    <div class="table-scroll" role="region" aria-label="Data quality issue log" tabindex="0">
+      <table id="issueLog"></table>
+    </div>
+    <p class="why">Why this matters: in a stove project, usage rates and household counts feed straight into the emission reduction calculation. A duplicate household or an impossible usage figure inflates credits, and a verifier will find it. Catching it at this stage is cheaper for everyone.</p>
+  </div>
+</section>
+
+<section class="section dark" id="work">
+  <div class="wrap">
+    <p class="kicker">Selected work</p>
+    <h2>Selected work</h2>
+
+    <article class="work-card featured">
+      <div>
+        <p class="tag">2025 to present · São Miguel, Azores</p>
+        <h3>Ilha Carbon: carbon accounting and monitoring design for a rock weathering project</h3>
+        <p class="role">Research Associate, ERW and CDR</p>
+        <p>An early-stage project to spread basalt fines from a local quarry on acidic volcanic pasture, where the rock weathers and locks CO₂ away as bicarbonate. A 100 ha pilot is proposed with a landowner and the INOVA laboratory.</p>
+        <ul class="ticks">
+          <li>Drafted a preliminary soil and feedstock sampling plan against Isometric's ERW protocols: baseline, untreated controls, sampling density, tracer elements, sample archiving.</li>
+          <li>Built a draft carbon accounting model: gross removal less quarrying, haulage and spreading emissions, with issuance and uncertainty deductions.</li>
+          <li>Wrote the technical and budget sections of an Açores 2030 R&amp;D application with INOVA.</li>
+          <li>Wrote a Python script to screen preliminary soil data and flag priority plots.</li>
+        </ul>
+        <p class="status-line">Status: pre-incorporation. First baseline sampling is scheduled for December 2026. No measured removal results yet.</p>
+      </div>
+      <div class="photos">
+        <figure><img src="assets/photos/quarry.jpg" alt="Basalt quarry on São Miguel" loading="lazy"></figure>
+        <figure><img src="assets/photos/fines.jpg" alt="Basalt fines stockpile" loading="lazy"></figure>
+      </div>
+    </article>
+
+    <div class="work-columns">
+      <article class="work-card">
+        <p class="tag">2018 to 2019 · India</p>
+        <h3>UNICEF WASH programme: household water and energy in rural communities</h3>
+        <p class="role">Project Assistant</p>
+        <p>Drinking water and sanitation projects in rural and tea-estate communities, including solar-powered water pumps and solar stoves.</p>
+        <ul class="ticks"><li>Multi-site drinking water quality testing across 63 parameters.</li><li>Coordinated with local government and community stakeholders.</li><li>Wrote progress and donor reports, and technical documentation for installations.</li></ul>
+      </article>
+      <article class="work-card">
+        <p class="tag">2019 to 2021 · India</p>
+        <h3>MGK Aqua: water treatment and compliance testing</h3>
+        <p class="role">Environmental Technologist</p>
+        <p>Designed, installed and commissioned 10+ water and wastewater treatment systems for residential and industrial sites.</p>
+        <ul class="ticks"><li>Compliance analyses: BOD, COD, DO, TSS, pH, alkalinity.</li><li>Detailed project reports and regulatory submissions.</li></ul>
+      </article>
+    </div>
+
+    <div class="work-columns">
+      <article class="work-card">
+        <p class="tag">2022 · Netherlands</p>
+        <h3>Geothermal heat grid, Leeuwarden (MSc case project)</h3>
+        <p>Social impact assessment built on 100 interviews, with QGIS mapping and an Excel emissions and cost model for switching from natural gas to geothermal heat.</p>
+      </article>
+      <article class="work-card">
+        <p class="tag">2024 to 2025 · Tamil Nadu, India</p>
+        <h3>ERW project description (concept stage)</h3>
+        <p>Drafted a project description for a proposed rock weathering project, benchmarked against Verra VM0046, Isometric and Puro.earth requirements. Not submitted.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="video" hidden>
+  <div class="wrap">
+    <p class="kicker">Video</p>
+    <h2>Field videos</h2>
+    <div class="videos" id="videoGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="wrap">
+    <p class="kicker">Experience</p>
+    <h2>Experience and education</h2>
+    <ol class="timeline">
+      <li><span class="when">2025 to present · Research Associate, ERW and CDR</span><div><h3>Ilha Carbon</h3><p>São Miguel, Azores. Sampling design, carbon accounting, partner coordination and funding applications.</p></div></li>
+      <li><span class="when">2022 to 2025 · Marketing, data and support roles</span><div><h3>Marketing Lead, Scores and Levels · Technical Support Associate, Eurail</h3><p><strong>Marketing Lead, Scores and Levels:</strong> Portugal, 2024 to 2025. Campaigns across Asian, African and Brazilian markets; KPI reporting in SQL, Excel and Power BI.<br><strong>Technical Support Associate, Eurail:</strong> Netherlands, 2022 to 2023. CRM case tracking against SLA targets; process documentation for a remote team.</p></div></li>
+      <li><span class="when">2021 to 2022 · MSc Environmental and Energy Management</span><div><h3>University of Twente</h3><p>Energy management, digitalisation and sustainability. HOMER, RETScreen, SQL, Power BI, QGIS.</p></div></li>
+      <li><span class="when">2019 to 2021 · Environmental Technologist</span><div><h3>MGK Aqua</h3><p>India. Water and wastewater treatment systems, compliance testing and regulatory reporting.</p></div></li>
+      <li><span class="when">2018 to 2019 · Project Assistant, WASH Programme</span><div><h3>UNICEF</h3><p>India. Rural water and sanitation, solar pumps and stoves, water quality testing, donor reporting.</p></div></li>
+      <li><span class="when">2015 to 2018 · BSc Environmental Science</span><div><h3>Amity University</h3><p>EIA and applied GIS. Field project on coral bleaching in the Andaman Islands.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section alt" id="credentials">
+  <div class="wrap grid3">
+    <div><p class="kicker">Certifications</p><ul class="plain">
+      <li>ISO 14064 GHG Lead Verifier, TÜV SÜD</li>
+      <li>ISO 14001 EMS Lead Auditor, IRCA</li>
+      <li>NEBOSH International General Certificate</li>
+      <li>Blue Carbon Foundations</li>
+      <li>Google Project Management Certificate</li>
+    </ul></div>
+    <div><p class="kicker">Skills</p><ul class="plain">
+      <li><strong>Carbon:</strong> carbon accounting with emission deductions, sampling and monitoring design, Verra VM0046 and Isometric ERW protocols. Learning cookstove methodologies (VMR0006, VM0050).</li>
+      <li><strong>Data:</strong> Excel, SQL, Power BI, Python (basic, pandas), QGIS (basic), Google Earth Engine (learning)</li>
+      <li><strong>Field:</strong> water and soil sampling, chain of custody, water quality analysis, stakeholder interviews</li>
+      <li><strong>Languages:</strong> English, Portuguese, Tamil, Hindi, Kannada</li>
+    </ul></div>
+  </div>
+</section>
+
+<section class="section dark" id="contact">
+  <div class="wrap center">
+    <p class="kicker">Contact</p>
+    <h2>Happy to talk.</h2>
+    <p class="lede">Based in Portugal. Open to remote roles and to field work, including in Sub-Saharan Africa.</p>
+    <div class="cta center">
+      <a class="btn primary" href="mailto:ash.impactco@gmail.com">Email: ash.impactco@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/aswin-sivaprakash" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Ash-Impactco" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="tel:+351938816822">+351 938 816 822</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">© 2026 Aswin Raj Sivaprakash · Photos from fieldwork on São Miguel</footer>
+<script>const VIDEOS = [];</script>
+<script src="main.js"></script>
+<script src="data-quality.js"></script>
+</body>
+</html>
